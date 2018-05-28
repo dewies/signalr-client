@@ -56,7 +56,7 @@ var DefaultHttpClient = /** @class */ (function (_super) {
         return new Promise(function (resolve, reject) {
             var xhr = new XMLHttpRequest();
             xhr.open(request.method, request.url, true);
-            xhr.withCredentials = true;
+            xhr.withCredentials = false;
             xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
             if (request.headers) {
                 Object.keys(request.headers)
